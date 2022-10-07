@@ -1,0 +1,184 @@
+nav {
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li  {
+display: inline-block;
+padding: 10px;
+}
+
+header {
+    background-color: #b41c1c;
+    padding-bottom: 40px;
+}
+
+.link-instagram {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.logo-footer {
+    padding-left: 560px;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 355px;
+    font-size: 16px;
+}
+
+.texto-principal {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 20px;
+    padding-right: 180px;
+    padding-top: 85px;
+}
+
+.imagen-principal {
+    padding-right: 120px;
+}
+
+.foto1 {
+    position: relative;
+}
+
+h1 {
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.contenedor-titulo-comida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.contenedor-fotos-comida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contenedor-descripcion-comida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo-formulario {
+    color: #ffffff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+form section div {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-bottom: 40px;
+}
+
+.titulo-partnership {
+    color: #ffffff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+.contenedor-fotos-marcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+
+h3 {
+    color: #ffffff;
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.texto-chef {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 20px;
+    padding-right: 220px;
+}
+
+.imagen-chef {
+    padding-right: 120px;
+}
+
+.texto-staff {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 160px;
+    padding-right: 120px;
+}
+
+.imagen-staff {
+    padding-left: 15px;
+}
