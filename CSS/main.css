@@ -3,57 +3,38 @@ header {
     padding-bottom: 40px;
 }
 
-.link-instagram {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style-type: none;
-    padding: 8px;
-    font-size: 16px;
-}
-
-.logo-footer {
-    padding-left: 560px;
-}
-
-.direccion {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    padding: 8px;
-    padding-left: 355px;
-    font-size: 16px;
-}
-
-.texto-principal {
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: justify;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 38px;
-    padding-left: 20px;
-    padding-right: 180px;
-    padding-top: 85px;
-}
-
-.imagen-principal {
-    padding-right: 120px;
-}
-
-.foto1 {
-    position: relative;
-}
-
 h1 {
+    padding-top: 25px;
     color: #ffffff;
     padding-bottom: 10px;
     text-align: center;
     font-size: 60px;
     font-family: cursive;
+}
+
+.contenedor-presentacion {
+    display: grid;
+    grid-template-areas: 
+    "texto-principal imagen-principal"
+    ;
+    grid-template-columns: 600px 300px;
+    color: #ffffff;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.texto-principal {
+    grid-area: texto-principal;
+    padding-left: 80px;
+    line-height: 40px;
+    padding-top: 40px;
+}
+
+.imagen-principal {
+    grid-area: imagen-principal;
+    padding-left: 200px;
 }
 
 .contenedor-titulo-comida {
@@ -92,18 +73,6 @@ h1 {
     padding-bottom: 40px;
 }
 
-/*form section div {
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    text-align: center;
-    font-family: cursive;
-    font-size: 20px;
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-bottom: 40px;
-}*/
-
 .formulario-contacto-email {
     padding-left: 250px;
     padding-right: 250px;
@@ -132,45 +101,93 @@ h1 {
     padding-bottom: 60px;
 }
 
-h3 {
+.descripcion-chef {
+    display: grid;
+    grid-template-areas: 
+    "titulo-chef titulo-chef titulo-chef"
+    "texto-chef imagen-chef imagen-chef"
+    ;
+    grid-template-columns: 400px 150px 150px;
     color: #ffffff;
     text-align: justify;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-size: 35px;
     font-family: cursive;
+    font-size: 20px;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.titulo-chef {
+    grid-area: titulo-chef;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 
 .texto-chef {
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: justify;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 38px;
-    padding-left: 20px;
-    padding-right: 220px;
+    grid-area: texto-chef;
 }
 
 .imagen-chef {
-    padding-right: 120px;
+    grid-area: imagen-chef;
 }
 
-.texto-staff {
+.descripcion-staff {
+    display: grid;
+    grid-template-areas: 
+    "titulo-staff titulo-staff titulo-staff"
+    "imagen-staff imagen-staff texto-staff"
+    ;
+    grid-template-columns: 150px 150px 515px;
     color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     text-align: justify;
     font-family: cursive;
     font-size: 20px;
-    line-height: 38px;
-    padding-left: 160px;
-    padding-right: 120px;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.titulo-staff {
+    grid-area: titulo-staff;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 
 .imagen-staff {
-    padding-left: 15px;
+    grid-area: imagen-staff;
+}
+
+.texto-staff {
+    grid-area: texto-staff;
+    padding-right: 60px;
+}
+
+.contenedor-footer {
+    display: grid;
+    grid-template-areas: 
+    "link-instagram-footer logo-footer direccion-footer"
+    "link-instagram-footer logo-footer telefono-footer"
+    ;
+    grid-template-columns: 280px 280px 280px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.link-instagram-footer {
+    grid-area: link-instagram-footer;
+}
+
+.logo-footer {
+    grid-area: logo-footer;
+    padding-left: 90px;
+}
+
+.direccion-footer {
+    grid-area: direccion-footer;
+}
+
+.telefono-footer {
+    grid-area: telefono-footer;
 }
