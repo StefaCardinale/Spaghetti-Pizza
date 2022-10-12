@@ -12,6 +12,8 @@ h1 {
     font-family: cursive;
 }
 
+/* Index */
+
 .contenedor-presentacion {
     display: grid;
     grid-template-areas: 
@@ -36,6 +38,8 @@ h1 {
     grid-area: imagen-principal;
     padding-left: 200px;
 }
+
+/* Carta */
 
 .contenedor-titulo-comida {
     display: flex;
@@ -69,6 +73,8 @@ h1 {
     padding-bottom: 20px;
 }
 
+/* Contacto */
+
 .titulo-formulario {
     color: #ffffff;
     text-align: center;
@@ -91,6 +97,8 @@ h1 {
     padding-right: 200px;
 }
 
+/* Partnerships */
+
 .titulo-partnership {
     color: #ffffff;
     text-align: center;
@@ -107,6 +115,8 @@ h1 {
     justify-content: space-evenly;
     padding-bottom: 60px;
 }
+
+/* Sobre Nosotros */
 
 .descripcion-chef {
     display: grid;
@@ -168,6 +178,10 @@ h1 {
     grid-area: texto-staff;
     padding-right: 60px;
 }
+
+/* Footer */
+
+
 
 .contenedor-footer {
     display: grid;
