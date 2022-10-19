@@ -160,7 +160,7 @@ h1 {
     font-size: 20px;
     justify-content: space-around;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .titulo-staff {
@@ -178,38 +178,6 @@ h1 {
     padding-right: 60px;
 }
 
-/* Footer */
-
-.contenedor-footer {
-    display: grid;
-    grid-template-areas: 
-    "link-instagram-footer logo-footer direccion-footer"
-    "link-instagram-footer logo-footer telefono-footer"
-    ;
-    grid-template-columns: 280px 280px 280px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-
-.link-instagram-footer {
-    grid-area: link-instagram-footer;
-}
-
-.logo-footer {
-    grid-area: logo-footer;
-    padding-left: 90px;
-}
-
-.direccion-footer {
-    grid-area: direccion-footer;
-}
-
-.telefono-footer {
-    grid-area: telefono-footer;
-}
-
 @media screen and (max-width: 320px) {
     h1 {
         padding-top: 5px;
@@ -219,6 +187,7 @@ h1 {
         font-size: 22px;
         font-family: cursive;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -234,9 +203,84 @@ h1 {
 }
 
 @media screen and (max-width: 1024px) {
+    .contenedor-presentacion {
+        display: grid;
+        grid-template-areas: 
+        "texto-principal imagen-principal"
+        ;
+        grid-template-rows: 350px 80px;
+        color: #ffffff;
+        text-align: justify;
+        font-family: cursive;
+        font-size: 20px;
+        padding-top: 10px;
+        justify-content: space-evenly;
+    }
 
-}
+    .texto-principal {
+        grid-area: texto-principal;
+    }
+    
+    .imagen-principal {
+        grid-area: imagen-principal;
+        padding-top: 28px;
+    }
 
-@media screen and (max-width: 1200px) {
-
+    .descripcion-chef {
+        display: grid;
+        grid-template-areas: 
+        "titulo-chef titulo-chef titulo-chef"
+        "texto-chef imagen-chef imagen-chef"
+        ;
+        grid-template-rows: 60px 120px 120px;
+        color: #ffffff;
+        text-align: justify;
+        font-family: cursive;
+        font-size: 16px;
+        justify-content: space-evenly;
+        padding-top: 25px;
+        padding-bottom: 18px;
+    }
+    
+    .titulo-chef {
+        grid-area: titulo-chef;
+    }
+    
+    .texto-chef {
+        grid-area: texto-chef;
+        padding-top: 40px;
+    }
+    
+    .imagen-chef {
+        grid-area: imagen-chef;
+    }
+    
+    .descripcion-staff {
+        display: grid;
+        grid-template-areas: 
+        "titulo-staff titulo-staff titulo-staff"
+        "imagen-staff imagen-staff texto-staff"
+        ;
+        grid-template-rows: 100px 100px 250px;
+        color: #ffffff;
+        text-align: justify;
+        font-family: cursive;
+        font-size: 16px;
+        justify-content: space-around;
+        padding-top: 35px;
+    }
+    
+    .titulo-staff {
+        grid-area: titulo-staff;
+    }
+    
+    .imagen-staff {
+        grid-area: imagen-staff;
+    }
+    
+    .texto-staff {
+        grid-area: texto-staff;
+        padding-top: 35px;
+        padding-left: 120px;
+    }
 }
